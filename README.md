@@ -20,7 +20,7 @@ pip install -r requirements.txt
 2. Export your NewsAPI key as an environment variable:
 
 ```bash
-export NEWSAPI_KEY=your_key_here
+export NEWSAPI_KEY="036a4eee25964a9bb2a2804c6ddf0685"
 ```
 
 3. Run the script:
