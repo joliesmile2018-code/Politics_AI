@@ -58,6 +58,7 @@ export OPENAI_API_KEY="sk-..."
 python analyze_news_llm.py
 ```
 
-This script queries an LLM for every article, saves scores in
-`energy_news_scored.csv`, and creates one radar chart per article encoded as
-base64 text files in the `llm_radar_charts` directory.
+This script queries an LLM for every article, saving the results to a new file
+named `energy_news_scored.csv` in the repository root once the run completes.
+It also creates one radar chart per article encoded as base64 text files in the
+`llm_radar_charts` directory.
