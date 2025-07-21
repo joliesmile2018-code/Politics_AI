@@ -49,3 +49,15 @@ To view the chart as an image:
 ```bash
 base64 -d radar_chart_base64.txt > radar_chart.png
 ```
+
+Alternatively, you can analyze each article individually using a language model.
+Export your OpenAI API key and run `analyze_news_llm.py`:
+
+```bash
+export OPENAI_API_KEY="sk-..."
+python analyze_news_llm.py
+```
+
+This script queries an LLM for every article, saves scores in
+`energy_news_scored.csv`, and creates one radar chart per article encoded as
+base64 text files in the `llm_radar_charts` directory.
